@@ -15,29 +15,31 @@ $(document).ready(function () {
         }
 
         // Scroll spy
-        $('section').each(function () {
-            var height = $(this).height();
-            var offset = $(this).offset().top - 200;
-            var top = $(window).scrollTop();
-            var id = $(this).attr('id');
-
+        $('section').each(function() {
+            let height = $(this).height();
+            let offset = $(this).offset().top - 200;
+            let top = $(window).scrollTop();
+            let id = $(this).attr('id');
+    
             if (top > offset && top < offset + height) {
                 $('.navbar ul li a').removeClass('active');
-                $('.navbar').find('[href="#' + id + '"]').addClass('active');
+                $('.navbar').find(`[href="#${id}"]`).addClass('active');
             }
-        });
+        });    
     });
 
     // Smooth scrolling
 $(document).ready(function () {
-    $('a[href^="#"]').on('click', function (event) {
-      var target = $(this.getAttribute('href'));
-      if (target.length) {
-        event.preventDefault();
-        $('html, body').stop().animate({
-          scrollTop: target.offset().top
-        }, 800);
-      }
+    $('a[href*="#"]').on('click', function(e) {
+        e.preventDefault();
+        var target = $(this).attr('href');
+        $('html, body').animate({
+            scrollTop: $(target).offset().top
+        }, 500, 'linear', function() {
+            // Tambahkan kelas aktif pada elemen navbar yang sesuai
+            $('.navbar ul li a').removeClass('active');
+            $('.navbar').find(`[href="${target}"]`).addClass('active');
+        });
     });
   });
   
