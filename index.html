@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Favicon -->
+    <link id='favicon' rel="shortcut icon" href="img/favicon.png" type="image/x-png">
+    <title>Portfolio | Kevin Hadikusuma</title>
+</head>
+<body>
+    <!-- mulai navbar -->
+<header>
+    <a href="/" class="logo">KevinHadi<span>.</span></a>
+
+    <div id="menu" class="fas fa-bars"></div>
+    <nav class="navbar">
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+    <!-- navbar selesai -->
+
+
+    <!-- mulai hero -->
+<section class="home" id="home">
+    <div id="particles-js"></div>
+
+    <div class="content">
+    <h2>Hi There,<br/> I'm Kevin <span>Hadikusuma</span></h2>
+    <p>Welcome to my portfolio website</p>
+    <a href="#about" class="btn"><span>About Me</span>
+      <i class="fas fa-arrow-circle-down"></i>
+    </a>
+    <div class="socials">
+        <ul class="social-icons">
+          <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/kevin-hadikusuma-5830b226b/" target="_blank"><i class="fab fa-linkedin"></i></a></li> 
+          <li><a class="github" aria-label="GitHub" href="https://github.com/KevinHakuma" target="_blank"><i class="fab fa-github"></i></a></li>
+          <li><a class="telegram" aria-label="Telegram" href="https://t.me/kevinhadikusuma" target="_blank"><i class="fab fa-telegram-plane"></i></a></li>
+          <li><a class="instagram" aria-label="Instagram" href="https://www.instagram.com/kvnhdi_"><i class="fab fa-instagram" target="_blank"></i></a></li>
+        </ul>
+      </div>
+    </div>
+<div class="image">
+    <img draggable="false" class="tilt" src="img/heroimg.png" alt="">
+</div>
+</section>
+<!-- hero selesai -->
+
+
+<!-- about section starts -->
+<section class="about" id="about">
+    <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
+    
+    <div class="row">
+
+    <div class="image">
+        <img draggable="false" class="tilt" src="img/a.png" alt="">
+    </div>
+    <div class="content">
+        <h3>I'm Kevin</h3>
+        <span class="tag">Web Developer and Designer</span>
+        
+        <p>I am a passionate web developer and designer based in Tangerang, Indonesia. I have a strong foundation in front-end development with HTML, CSS, and JavaScript. I enjoy creating visually appealing and user-friendly websites that provide a great user experience.</p>
+        <p>I am constantly expanding my skills and staying up to date with the latest web technologies and design trends. I have experience working with frameworks like React and Vue.js, as well as proficiency in responsive web design and cross-browser compatibility.</p>
+        <p>When I'm not coding, you can find me exploring new design inspirations, attending tech meetups, or working on personal projects to sharpen my skills. I am always excited to collaborate on new projects and contribute to the web development community.</p>
+        
+        <div class="box-container">
+            <!-- <div class="box">
+              <p><span> age: </span> 20</p>
+              <p><span> phone : </span> +91 XXX-XXX-XXXX</p>
+            </div> -->
+            <div class="box">
+              <p><span> email : </span> kevinhadikusuma5@gmail.com</p>
+              <p><span> place : </span> Tangerang, Indonesia - 15154</p>
+            </div>
+        </div>
+        
+        <div class="resumebtn">
+            <a href="https://drive.google.com/file/d/1bcOvgNL8YAeWTkymleMm-lReei7yX-LG/view" target="_blank" class="btn"><span>Resume</span>
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+
+    </div>
+    </div>
+</section>
+<!-- about section ends -->
+
+
+<!-- work project section starts -->
+<section class="work" id="work">
+    <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
+  
+    <div class="box-container">
+      <div class="box tilt">
+        <img draggable="false" src="img/a.png" alt="project" />
+        <div class="content">
+          <!-- Konten lainnya -->
+          <div class="caption">Penjelasan Gambar 1</div>
+        </div>
+      </div>
+  
+      <div class="box tilt">
+        <img draggable="false" src="img/a.png" alt="project" />
+        <div class="content">
+          <!-- Konten lainnya -->
+          <div class="caption">Penjelasan Gambar 2</div>
+        </div>
+      </div>
+  
+      <div class="box tilt">
+        <img draggable="false" src="img/a.png" alt="project" />
+        <div class="content">
+          <!-- Konten lainnya -->
+          <div class="caption">Penjelasan Gambar 3</div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="viewall">
+      <a href="/projects" class="btn"><span>View All</span><i class="fas fa-arrow-right"></i></a>
+    </div>
+  </section>
+  <!-- work project section ends -->
+
+
+  <!-- contact section starts -->
+<section class="contact" id="contact">
+  
+    <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
+  
+    <div class="container">
+      <div class="content">
+        <div class="image-box">
+          <img draggable="false" src="img/contact1.png" alt="">
+        </div>
+      <form id="contact-form">
+        
+        <div class="form-group">
+          <div class="field">
+            <input type="text" name="name" placeholder="Name" required>
+            <i class='fas fa-user'></i>
+          </div>
+          <div class="field">
+            <input type="text" name="email" placeholder="Email" required>
+            <i class='fas fa-envelope'></i>
+          </div>
+          <div class="field">
+            <input type="text" name="phone" placeholder="Phone">
+            <i class='fas fa-phone-alt'></i>
+          </div>
+          <div class="message">
+          <textarea placeholder="Message" name="message" required></textarea>
+          <i class="fas fa-comment-dots"></i>
+          </div>
+          </div>
+        <div class="button-area">
+          <button type="submit">
+            Submit <i class="fa fa-paper-plane"></i></button>
+        </div>
+      </form>
+    </div>
+    </div>
+  </section>
+  <!-- contact section ends -->
+
+
+  <!-- footer section starts -->
+<section class="footer">
+
+    <div class="box-container">
+  
+        <div class="box">
+            <h3>Kevin's Portfolio</h3>
+            <p>Thank you for visiting my personal portfolio website. Connect with me over socials. <br/> <br/></p>
+        </div>
+  
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#home"><i class="fas fa-chevron-circle-right"></i> home</a>
+            <a href="#about"><i class="fas fa-chevron-circle-right"></i> about</a>
+            <a href="#work"><i class="fas fa-chevron-circle-right"></i> portfolio</a>
+        </div>
+  
+        <div class="box">
+            <h3>contact info</h3>
+            <p> <i class="fas fa-phone"></i>+62 896-2294-5376</p>
+            <p> <i class="fas fa-envelope"></i>kevinhadikusuma5@gmail.com</p>
+            <p> <i class="fas fa-map-marked-alt"></i>Tangerang, Indonesia - 15154</p>
+            <div class="share">
+  
+                <a href="https://www.linkedin.com/in/kevin-hadikusuma-5830b226b" class="fab fa-linkedin" aria-label="LinkedIn" target="_blank"></a>
+                <a href="https://github.com/KevinHakuma" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
+                <a href="mailto:kevinhadikusuma5@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
+                <a href="https://t.me/kevinhadikusuma" class="fab fa-telegram-plane" aria-label="Telegram" target="_blank"></a>
+                <a href="https://www.instagram.com/kvnhdi_" class="fab fa-instagram" aria-label="Instagram" target="_blank"></a>
+            </div>
+        </div>
+    </div>
+  
+    <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a href="https://www.linkedin.com/in/kevin-hadikusuma-5830b226b"> kevin hadikusuma</a></h1>
+  </section>
+  <!-- footer section ends -->
+
+
+
+<script src="js/script.js"></script>
+</body>
+</html>
