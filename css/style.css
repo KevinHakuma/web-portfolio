@@ -185,7 +185,7 @@ header .navbar ul li a:hover {
     gap: 1.5rem;
     min-height: 100vh;
     align-items: center;
-    /* margin-top: -50px; */
+    margin-top: -50px;
     background: linear-gradient(45deg, #f5f5f5 30%, #e0dada 70%);
   }
   .home #particles-js {
